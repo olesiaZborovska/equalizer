@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Element color="#e63946" name="first"/>
+    <Element color="#457b9d" name="second"/>
+    <Element color="#6a994e" name="third"/>
+    <Element color="#6930c3" name="fourth"/>
+    <Element color="#fca311" name="fifth"/>
+    <Element color="#f9c74f" name="sixth"/>
+    <Element color="#f15bb5" name="seventh"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Element from './components/Element.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Element
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 60px;
 }
 </style>
